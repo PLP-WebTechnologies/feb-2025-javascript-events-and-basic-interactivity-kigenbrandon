@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join PLP Academy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    button {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #007BFF;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    #dynamic-box {
+      transition: all 0.3s ease;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">PLP Academy</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="main-content">
+      <h2 id="welcome-text">Become a Tech Pro with PLP Academy</h2>
+      <p>Power Learn Project (PLP) Academy empowers learners across Africa with hands-on skills in Software Engineering, Data Science, and Cyber Security.</p>
+
+      <h3 id="programs">💼 Our Programs</h3>
+      <ul>
+        <li><strong>Software Engineering</strong> – Build web and mobile applications using modern technologies.</li>
+        <li><strong>Data Science</strong> – Analyze data, build models, and gain insights to solve real-world problems.</li>
+        <li><strong>Cyber Security</strong> – Protect digital infrastructure and combat online threats.</li>
+      </ul>
+
+      <h4>🌍 Why Join PLP Academy?</h4>
+      <ul>
+        <li>Learn from industry professionals</li>
+        <li>Access to career mentorship and job support</li>
+        <li>Collaborate with peers across the continent</li>
+        <li>Completely free and accessible online</li>
+      </ul>
+
+      <h3 id="join">🚀 Apply Now</h3>
+      <form id="contactForm">
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="program">Choose Program:</label>
+        <select id="program" name="program" required>
+          <option value="">-- Select --</option>
+          <option value="software">Software Engineering</option>
+          <option value="data">Data Science</option>
+          <option value="cyber">Cyber Security</option>
+        </select>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label><input type="checkbox" id="togglePassword"> Show Password</label>
+
+        <button type="submit">Join PLP Academy</button>
+        <p id="form-message" style="color: red; margin-top: 10px;"></p>
+      </form>
+    </section>
+
+    <aside class="sidebar">
+      <h3>About PLP Academy</h3>
+      <p>PLP Academy is a pan-African initiative with a mission to train 1 million young Africans in tech by 2027. Our programs are designed to equip learners with practical skills for high-demand tech careers.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 PLP Academy. Empowering Africa through tech.</p>
+  </footer>
+</body>
+</html>
